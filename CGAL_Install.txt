@@ -1,0 +1,131 @@
+INSTALL AND RUN CGAL ON UBUNTU
+
+Initial Installations
+
+sudo apt-get update
+
+sudo apt-get upgrade
+
+sudo apt-get install gcc
+
+sudo apt-get install g++
+ 
+sudo apt-get install build-essential
+
+
+1. CMAKE
+
+sudo apt-get install cmake
+
+2. GMP
+
+sudo apt-get install libgmp3-dev
+
+sudo apt-get install libgmp-dev
+
+3. MPFR
+
+sudo apt-get install libmpfr-dev
+
+sudo apt-get install libmpfr-doc
+
+sudo apt-get install libmpfr4
+
+sudo apt-get install libmpfr6
+
+4. ZLIB
+
+sudo apt install zlib1g
+
+sudo apt-get install zlib1g
+
+sudo apt-get install zlib1g-dev
+
+5. BOOST LIBRARIES
+
+sudo apt-get install libboost-all-dev
+
+6. OPENGL
+
+
+sudo apt-get install cmake libx11-dev xorg-dev libglu1-mesa-dev freeglut3-dev libglew1.5 libglew1.5-dev libglu1-mesa libglu1-mesa-dev libgl1-mesa-glx libgl1-mesa-dev
+
+sudo apt-get install libglfw3
+
+sudo apt-get install libglfw3-dev
+
+
+7. TBB
+ 
+Initial Steps:-
+
+sudo apt-get install libtbb-dev
+
+8. QT
+
+sudo apt-get install qt5-default
+
+sudo apt-get install libfontconfig1
+
+sudo apt-get install mesa-common-dev
+
+sudo apt-get install libglu1-mesa-dev -y
+
+sudo apt-get install libqt5svg5-dev 
+
+sudo apt-get install qtscript5-dev 
+
+sudo apt-get install libqt5opengl5-dev 
+
+
+9. QGLviewer
+
+10. CGAL
+
+go to https://github.com/CGAL/cgal/releases
+Download the release in Unix/Linux Source category.
+Eg: CGAL-4.13.tar.xz
+            Extract the downloaded file.
+            Copy it to the home folder.
+Go to the copied folder in home and open a terminal
+ In the terminal run the following commands :-
+               
+               cmake .
+       make 
+ 
+These steps should lead to a successful installation of cmake.
+
+Note:-
+After running cmake in CGAL directory, If it shows any errors or missing libraries,  it means that the installation of that library was not successful.
+Install the libraries again and then reinstall CGAL.
+
+Compile Examples 
+
+Go to CGA->examples folder(select an example) and run following commands
+
+cmake -DCGAL_DIR=/home/username/CGAL-4.12/ .
+
+make 
+
+then run the generated output.
+
+Compile Demos 
+
+Go to CGA->Demos folder(Select a demo) and run following commands
+
+cmake -DCGAL_DIR=/home/username/CGAL-4.12/ .
+
+make 
+
+then run the generated output.
+
+
+All these installations have been tested on ubuntu 18.04.1 bionic-beaver.
+
+Note:-
+
+    • There are many more libraries to be installed for the proper working of CGAL. This is just a basic installation.
+
+
+Email: ivanbiji@icloud.com
+GitHub: https://github.com/ivanbiji
